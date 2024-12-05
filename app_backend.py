@@ -49,8 +49,16 @@ def send_to_model_api(image_path):
         files = {'image': (image_path, img_file)}
         response = requests.post(model_api_url, files=files)
 
+    # Debugging: Print the response content
+    print("Model API Response:", response.text)
+
     if response.status_code == 200:
-        return response.json().get("prediction", "No prediction")
+        # Assuming the model API returns a JSON with 'confidence' and 'predicted_class'
+        data = response.json()
+        return {
+            "confidence": data.get("confidence", 0.0),  # Default to 0.0 if not found
+            "predicted_class": data.get("predicted_class", "No prediction")  # Default message if not found
+        }
     else:
         return "Error in prediction"
 

@@ -12,7 +12,7 @@ with open(image_path, 'rb') as img_file:
     response = requests.post(url, files={'image': img_file})
 
 # Check the response
-if response.status_code == 200:
+if response.status_code == 201:
     print("Response from backend:", response.json())
 else:
     print("Error:", response.status_code, response.text)
