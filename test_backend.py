@@ -3,7 +3,7 @@
 import requests
 
 # Backend API URL (replace with your actual backend API URL)
-url = "http://<vm-external-ip>:5000/upload"  
+url = "http://<vm-external-ip>:5000/upload"  # change the URL depend on your case
 
 # Path to test image
 image_path = "uploads/egg.jpg"
