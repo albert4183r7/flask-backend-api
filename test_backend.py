@@ -6,7 +6,7 @@ import requests
 url = "http://<vm-external-ip>:5000/upload"  
 
 # Path to test image
-image_path = "uploads/test_image.jpg"
+image_path = "uploads/egg.jpg"
 
 # Simulate sending a request with an image to the backend
 def test_upload_image():
