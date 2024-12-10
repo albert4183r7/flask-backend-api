@@ -1,3 +1,4 @@
+
 # Backend Flask API
 1. Clone this repository.
 2. Navigate to your project directory.
@@ -11,5 +12,5 @@
    `pip install tensorflow requests werkzeug`
 7. Open new terminal and run the following commands on each terminal. <br>
    `python app_backend.py` <br>
-   `python app_model.py` <br>
-   `python test_backend.py`
+   `python test_backend.py` (opsional, if you decide to use postman, no need to run this script)
+### NB: test_backend.py is used to test the backend API, actually you can also use postman to test it.
